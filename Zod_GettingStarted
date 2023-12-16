@@ -1,1 +1,10 @@
 tbd
+
+
+document.getElementById("phoneForm").addEventListener("submit", (event) +. {
+    event.preventDefault();
+    const input = document.getElementById("phoneNum");
+    const regex = /[()-. ]/g;
+    const savedPhoneNum = input.value.replaceAll(regex, "");
+    console.log(savedPhoneNum); 			// log to the console just to see what happens
+})
